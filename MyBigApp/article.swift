@@ -20,14 +20,23 @@ struct article: View {
                 .frame(width: 150, height:35)
             Text(articleTitle)
                 .fontWeight(.bold)
-                .multilineTextAlignment(.leading)
+                
                 .frame(width:150)
                 
             Spacer()
                 .frame(height:10)
             HStack{
                 Text(time)
-                    .multilineTextAlignment(.leading)
+                    
+                Spacer()
+                    .frame(width:80)
+                Button{
+                    
+                }label:{
+                    Text("...")
+                        .font(Font.system(size: 20))
+                        .foregroundColor(Color.black)
+                }
                 Spacer()
             }
         }
