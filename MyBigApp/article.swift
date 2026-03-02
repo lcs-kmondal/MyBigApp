@@ -15,8 +15,9 @@ struct article: View {
         VStack(alignment: .leading){
             Rectangle()
                 .frame(width: 150, height:150)
+                .cornerRadius(20)
             Rectangle()
-                .frame(width: 150, height:50)
+                .frame(width: 150, height:35)
             Text(articleTitle)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.leading)
@@ -31,4 +32,8 @@ struct article: View {
             }
         }
     }
+}
+
+#Preview {
+    ContentView()
 }
